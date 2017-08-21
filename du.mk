@@ -27,7 +27,7 @@ PRODUCT_NAME := du_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
-PRODUCT_MODEL := Z2 Plus
+PRODUCT_MODEL := ZUK Z2131
 
 PRODUCT_GMS_CLIENTID_BASE := android-zuk
 
@@ -37,7 +37,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
 
 TARGET_VENDOR := zuk
 
+PRODUCT_PACKAGES += \
+    SuperSU
+	
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:6.0.1/MMB29M/1.9.077_160617:user/release-keys" \
-    PRIVATE_BUILD_DESC="z2_plus-user 6.0.1 MMB29M 1.9.077_160617 release-keys"
+    BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
+    PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/ViaBrowser.apk:/system/app/ViaBrowser/ViaBrowser.apk \
+    $(LOCAL_PATH)/prebuilt/LawnchairLauncher.apk:/system/app/LawnchairLauncher/LawnchairLauncher.apk \
+    $(LOCAL_PATH)/prebuilt/Brevent.apk:/system/app/Brevent/Brevent.apk \
+    $(LOCAL_PATH)/prebuilt/GoogleInputMethod.apk:/system/app/GoogleInputMethod/BaiduInputMethod.apk

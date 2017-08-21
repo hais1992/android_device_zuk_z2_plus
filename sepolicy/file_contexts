@@ -32,3 +32,6 @@
 # Data files
 /data/decrypt.txt                     u:object_r:thermal_data_file:s0
 /data/misc/netmgr/log.txt             u:object_r:netmgrd_data_file:s0
+
+# Alipay
+/system/bin/ifaad                       u:object_r:ifaadaemon_exec:s0
