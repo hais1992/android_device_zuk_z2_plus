@@ -49,4 +49,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/ViaBrowser.apk:/system/app/ViaBrowser/ViaBrowser.apk \
     $(LOCAL_PATH)/prebuilt/LawnchairLauncher.apk:/system/app/LawnchairLauncher/LawnchairLauncher.apk \
     $(LOCAL_PATH)/prebuilt/Brevent.apk:/system/app/Brevent/Brevent.apk \
-    $(LOCAL_PATH)/prebuilt/GoogleInputMethod.apk:/system/app/GoogleInputMethod/BaiduInputMethod.apk
+    $(LOCAL_PATH)/prebuilt/GoogleInputMethod.apk:/system/app/GoogleInputMethod/BaiduInputMethod.apk	\
+	$(LOCAL_PATH)/prebuilt/SuperSU/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    $(LOCAL_PATH)/prebuilt/SuperSU/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon 
+	
