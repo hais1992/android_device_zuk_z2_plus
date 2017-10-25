@@ -31,10 +31,6 @@ ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
 
 # Camera
-persist.camera.imglib.fddsp=1
-persist.camera.llc=1
-persist.camera.llnoise=1
-persist.camera.stats.test=0
 camera.disable_zsl_mode=1
 
 # CNE
@@ -57,10 +53,6 @@ ro.qcom.ad.sensortype=2
 
 # Fingerprint
 persist.qfp=false
-
-# Flip panel
-persist.panel.inversemounted=1
-ro.panel.mountflip=3
 
 # Google
 ro.opa.eligible_device=true
@@ -87,6 +79,7 @@ media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
 use.qti.sw.alac.decoder=true
 use.qti.sw.ape.decoder=true
+persist.media.treble_omx=false
 
 # NITZ
 persist.rild.nitz_plmn=""
@@ -122,12 +115,14 @@ persist.radio.apm_sim_not_pwdn=1
 persist.radio.custom_ecc=1
 persist.radio.flexmap_type=dds
 persist.radio.force_on_dc=true
+persist.radio.hw_mbn_update=1
 persist.radio.multisim.config=dsds
 persist.radio.primarycard=true
 persist.radio.rat_on=combine
 persist.radio.sib16_support=1
 persist.radio.sw_mbn_volte=1
 persist.radio.sw_mbn_openmkt=1
+persist.radio.sw_mbn_update=1
 
 # RmNet Data
 persist.rmnet.data.enable=true
@@ -153,8 +148,3 @@ ro.allow.mock.location=1
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
-
-# Language
-persist.sys.timezone=Asia/Shanghai
-persist.sys.language=zh
-persist.sys.country=CN
